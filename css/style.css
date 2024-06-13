@@ -306,8 +306,7 @@ body{
    
 
 }
-.request_flex-right {
-}
+
 .request_btn {
     border: none;
     background-color: #fff;
@@ -367,9 +366,7 @@ body{
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     justify-items: center;
-   
 
-    
 }
 .services_grid-item {
     padding: 59px 0;
@@ -447,16 +444,16 @@ body{
     margin-bottom: 21px;
 }
 
-.question_h3.close{
+/* .question_h3.close{
     margin-bottom: 33px;
-}
+} */
 .question_p {
     margin-bottom: 40px;
     color:var(--gray-color);
     max-width: 730px;
 }
 
-.question_h3.open::before,
+/* .question_h3.open::before,
 .question_h3.close::before{
    content: "";
    display: inline-block;
@@ -467,28 +464,234 @@ body{
    background-position: center;
    margin-right: 14px;
    transform: rotate(90deg);
-}
+} */
 
-.question_h3.open::before{
+/* .question_h3.open::before{
     transform: rotate(-90deg);
 }
 .question_h3.close + .question_p{
   display: none;
-}
+} */
 
 @media screen and (max-width:1280px) {
     .question{
         padding: 150px 15px 110px;
     }
 
- }
+}
  
- @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     
+}
 
- }
+.partners {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: var(--dark-color);
+}
+
+.partners-h2 {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.partners_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.partners_item {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 170px;
+}
+
+.partners_item:nth-child(5n){
+    margin-right: 0;
+}
+
+@media screen and (max-width:1280px) {
+    .partners_flex{
+        justify-content: center;
+    }
+
+    .partners_item:nth-child(5n){
+        margin-right: 40px;
+    }
+
+}
+ 
+@media screen and (max-width:768px) {
+    .partners_item{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .partners_item:nth-child(5n){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
 
 
+.reviews {
+   padding: 150px 0 140px;
+}
+
+.reviews-h2 {
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.reviews_grid {
+    display: grid;
+    gap: 28px 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reviews_grid-item {
+}
+.reviews_card {
+    background-color: #f7f7f7;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+.rewiew_quotes {
+    font-size: 96px;
+    line-height: 1;
+    margin-bottom: -40px;
+    color: var(--accent-color);
+}
+
+.reviews_auther-accent {
+    color: var(--accent-color);
+}
 
 
+@media screen and (max-width:1280px) {
+    .reviews {
+        padding: 100px 0 15px;
+    }
 
+    .reviews_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media screen and (max-width:768px) {
+    .reviews_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.contacts {
+    padding: 100px 0 150px;
+}
+
+.contacts_h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacts-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.contacts_item {
+    max-width: 255px;
+    text-align: center;
+}
+.contacts_icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 13px;
+}
+
+.contacts_h3 a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.contacts_h3 {
+
+}
+.contacts_h3-gray {
+    color: var(--gray-color);
+    margin-bottom: 18px;
+}
+.contacts_h3-accent {
+    color: var(--accent-color);
+}
+
+
+@media screen and (max-width:1280px) {
+    .contacts-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contacts_item{
+        max-width: 100%;
+    }
+}
+ 
+@media screen and (max-width:768px) {
+    .contacts-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .contacts_item{
+        max-width: 100%;
+    }
+}
+
+
+.footer {
+    padding: 30px  0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1280px) {
+    .header_title {
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+    .footer{
+        padding: 30px 15px;
+    }
+ 
+}
+ 
+@media screen and (max-width:768px) {
+    .footer-flex{
+        flex-direction: column;
+    }
+}
+
+
+.menu__box {
+    display: block;
+    position: fixed;
+    /* visibility: hidden; */
+    top: 0;
+    width: 250px;
+    height: 30%;
+    margin: 20px 0;
+    padding: 40px 0;
+    list-style: none;
+    text-align: center;
+    background-color: var(--accent-color);
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 0 20px 20px 0;
+  
+  }
+
+  .menu__item{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 800;
+  }
