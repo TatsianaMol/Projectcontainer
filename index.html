@@ -14,18 +14,9 @@
 </head>
 
 <body>  
-  <!--   <div class="container_activ">
-        <ul class="menu__box">
-            <li><a class="menu__item" href="#">Главная</a></li>
-            <li><a class="menu__item" href="#">Проекты</a></li>
-            <li><a class="menu__item" href="#">Команда</a></li>
-            <li><a class="menu__item" href="#">Блог</a></li>
-            <li><a class="menu__item" href="#">Контакты</a></li>
-        </ul>
-    </div>
-         -->
+
     <header class="header">
-        <div class="container_activ">
+        <div class="container_activ wow">
             <ul class="menu__box">
                 <li class="burli"><a class="menu__item" href="#">Главная</a></li>
                 <li class="burli"><a class="menu__item" href="#">Проекты</a></li>
@@ -366,6 +357,14 @@
 </footer>
 </body>
 <script>
+    let burger = document.querySelector('.burger')
+
+  
+    burger.onclick = function(event) {
+    let elem_menu = document.querySelector('.menu__box')
+    elem_menu.classList.toggle('wow');
+}
+
     
 </script>
 
